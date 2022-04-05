@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Wydarzenie">
+        <lightning-record-edit-form record-id={recordId} object-api-name="Wydarzenie__c"
+                onsuccess={handleSuccess} onsubmit ={handleSubmit}>
+            <lightning-messages>
+            </lightning-messages>
+            <lightning-input-field field-name="Name">
+            </lightning-input-field>
+            <lightning-input-field field-name="Data__c">
+            </lightning-input-field>
+            <lightning-input-field field-name="Miejsce__c">
+            </lightning-input-field>
+            <lightning-input-field field-name="Opis__c">
+            </lightning-input-field>
+            <lightning-button class="slds-m-top_small" variant="brand" type="submit" name="Zapisz" label="Zapisz">
+            </lightning-button>
+            <lightning-button class="slds-m-top_small" label="Anuluj" onclick={handleReset}>
+            </lightning-button>
+        </lightning-record-edit-form>
+    </lightning-card>
+</template>
